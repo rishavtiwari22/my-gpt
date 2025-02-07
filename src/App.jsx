@@ -18,22 +18,31 @@ function App() {
     end.current.scrollIntoView();
   }, [massage]);
 
+
   const handelSend = async () => {
     if (!input) return;
-    setMassage([...massage, { text: input, isBot: false }]);
+  
+    const userMessage = { text: input, isBot: false };
+  
+    setMassage(prevMessages => [...prevMessages, userMessage]);
+  
+    setInput('');
+  
     const prompt = await getGPTResponse(input);
-    console.log('Prompt - ',prompt);
-    setMassage([
-      ...massage,
-      { text: input, isBot: false },
-      { text: prompt, isBot: true }
-    ]);
-  }
+    console.log('Prompt - ', prompt);
+  
+    const botMessage = { text: prompt, isBot: true };
+  
+    setMassage(prevMessages => [...prevMessages, botMessage]);
+  };
+  
+  
 
   const handelEnter = async (e) => {
     if (e.key === 'Enter') {
       console.log(e.key);
       await handelSend();
+      setInput('');
     }
   }
 
