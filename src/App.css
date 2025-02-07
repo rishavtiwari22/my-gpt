@@ -1,0 +1,265 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(3, 0, 31);
+  color: rgb(241, 244, 244);
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.left{
+  width: 26%;
+  height: 100%;
+  border: 1px solid rgb(95, 95, 95);
+}
+.left-top{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-bottom: 1px solid rgb(95, 95, 95);
+}
+.logo{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 15px;
+  gap: 15px;
+}
+.logo h1{
+  font-size: 30px;
+}
+.btn{
+  width: 90%;
+  height: 60px;
+  margin-left: 20px;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #5441ff;
+  border: 0px solid black;
+  border-radius: 5px;
+}
+.btn span{
+  font-size: 33px;
+  margin-right: 10px;
+}
+.btn:hover{
+  background-color: #4c3ca4;
+  cursor: pointer;
+}
+
+.text-button{
+  width: 100%;
+  min-height: 65%;
+  background-color: rgb(3, 0, 31);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 25px 0px 10px 0px;
+}
+.text-btn{
+  width: 90%;
+  height: 60px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+  background: transparent;
+  border: 0.5px solid rgb(95, 95, 95);
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+  padding-left: 15px; 
+}
+.text-btn:hover{
+  background-color: rgb(40,30,70);
+  cursor: pointer;
+}
+
+.text-btn span{
+  font-size: 18px;
+  margin-left: 10px;
+  color: rgb(208, 208, 208);
+}
+
+.left-bottom{
+  width: 100%;
+  height: 30%;
+  border-top: 0px solid rgb(95, 95, 95);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 0px 20px 10px;
+}
+.home{
+  width: 100%;
+}
+.home , .home-icon{
+  font-size: 25px;
+  margin-left: 15px;
+}
+.home a{
+  font-size: 22px;
+  margin-left: 15px;
+  text-decoration: none;
+  color: rgb(208, 208, 208);
+}
+
+
+.right{
+  width: 74%;
+  min-height: 100vh;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+/* <=== Chats ===> */
+
+.chats{
+  max-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 1;
+  align-items: center;
+  margin: 20px;
+  overflow-y: auto;
+}
+
+.query{
+  width: 70%;
+  min-height: 60px;
+  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 40px 0px 50px 0px;
+}
+
+.userimg{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 15px;
+}
+.query span{
+  font-size: 17px;
+  margin-right: 20px;
+  letter-spacing: 0.5px;
+}
+
+
+.bot{
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(41, 44, 85);
+  padding: 10px 0px 20px 0px;
+}
+
+.botimg{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 8px 20px 0px 15px;  
+}
+
+.bot span{
+  font-size: 17px;
+  margin-right: 20px;
+  letter-spacing: 0.7px;
+  padding: 10px;
+}
+
+
+
+
+
+.footer{
+  width: 100%;
+  height: 15%;
+  background-color: rgb(3, 1, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.massage-btn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(3, 1, 31);
+  font-size: 25px;
+}
+
+.massage-btn button{
+  height: 70px;
+  width: 7%;
+  margin-bottom: 10px;
+  background-color: rgba(28, 30, 58, 1);
+  border: 1px solid black;
+  border-radius: 0px 5px 5px 0px;
+}
+.massage-btn button:hover{
+  background-color: rgb(65, 68, 122);
+  cursor: pointer;
+}
+
+.right input {
+  min-height: 50px;
+  width: 63%;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(28, 30, 58, 1);
+  border: 0px solid black;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.plan-icon{
+  color: rgb(208, 208, 208);
+  font-size: 20px;
+}
+
+.txt{
+  line-height: 27px;
+  color: rgba(225, 225, 225, 1);
+}
+
+
